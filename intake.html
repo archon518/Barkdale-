@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guest Dog Intake | Barkdale &amp; Co.</title>
+  <meta name="description" content="Complete the guest intake profile to request a boarding stay or grooming appointment at Barkdale & Co. in Brookdale, CA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="/" class="brand-logo">
+        <span class="brand-name">Barkdale &amp; Co.</span>
+        <span class="brand-tagline">Brookdale, California</span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Navigation" aria-expanded="false">&#9776;</button>
+
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services.html">Boarding &amp; Grooming</a></li>
+        <li><a href="/intake.html" class="active">Guest Intake</a></li>
+        <li><a href="/contact.html">Location &amp; FAQ</a></li>
+        <li><a href="/intake.html" class="nav-cta">Request a Stay</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Guest Onboarding</span>
+        <h1>Guest Dog Intake</h1>
+        <p>Complete this profile so we can review compatibility and schedule a meet-and-greet before your dog's first stay or appointment.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="guest-intake-form" class="form-container" novalidate>
+
+          <fieldset class="form-fieldset">
+            <legend>Guardian Details</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="owner_name">Full name</label>
+                <input type="text" id="owner_name" name="owner_name" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="owner_phone">Phone</label>
+                <input type="tel" id="owner_phone" name="owner_phone" autocomplete="tel" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="owner_email">Email</label>
+              <input type="email" id="owner_email" name="owner_email" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="emergency_contact">Emergency contact (name and phone)</label>
+              <input type="text" id="emergency_contact" name="emergency_contact" required />
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend>Requested Service</legend>
+            <div class="form-group">
+              <label for="service_type">Service</label>
+              <select id="service_type" name="service_type" required>
+                <option value="" selected disabled>Select a service</option>
+                <option>Boutique Overnight Boarding</option>
+                <option>Senior &amp; Medical Suite Boarding</option>
+                <option>Multi-Week Retreat (14+ nights)</option>
+                <option>Redwood Bath &amp; Tidy</option>
+                <option>Full Breed / Custom Trim</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dropoff_date">Drop-off date</label>
+                <input type="date" id="dropoff_date" name="dropoff_date" />
+              </div>
+              <div class="form-group">
+                <label for="pickup_date">Pick-up date</label>
+                <input type="date" id="pickup_date" name="pickup_date" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend>About Your Dog</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dog_name">Dog's name</label>
+                <input type="text" id="dog_name" name="dog_name" required />
+              </div>
+              <div class="form-group">
+                <label for="dog_breed">Breed or mix</label>
+                <input type="text" id="dog_breed" name="dog_breed" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dog_age">Age</label>
+                <input type="text" id="dog_age" name="dog_age" required />
+              </div>
+              <div class="form-group">
+                <label for="spay_neuter">Spayed / neutered</label>
+                <select id="spay_neuter" name="spay_neuter" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="feeding_routine">Diet and feeding routine</label>
+              <textarea id="feeding_routine" name="feeding_routine" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="medications">Medications, supplements, or mobility needs (optional)</label>
+              <textarea id="medications" name="medications" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="vet_clinic">Veterinary clinic (name and phone)</label>
+              <input type="text" id="vet_clinic" name="vet_clinic" required />
+            </div>
+            <div class="form-group">
+              <label for="temperament_notes">Temperament, triggers, and play style</label>
+              <textarea id="temperament_notes" name="temperament_notes" rows="4" required></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend>Review</legend>
+            <div class="checkbox-group">
+              <input type="checkbox" id="confirm_info" name="confirm_info" required />
+              <label for="confirm_info">I confirm the information above is accurate and understand a meet-and-greet is required before a first stay.</label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Prepare Intake Profile</button>
+          <div id="intake-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Barkdale &amp; Co.</h3>
+          <p>Home-based boutique dog boarding and gentle grooming in the heart of the San Lorenzo Valley.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services.html">Boarding &amp; Grooming</a></li>
+            <li><a href="/intake.html">Guest Dog Intake</a></li>
+            <li><a href="/contact.html">Location &amp; FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sanctuary Address</h4>
+          <ul>
+            <li>11233 Center Street</li>
+            <li>Brookdale, CA 95007</li>
+            <li>By Appointment &amp; Meet-and-Greet</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year">2026</span> Barkdale &amp; Co. All rights reserved.</span>
+        <span>Brookdale, California</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
