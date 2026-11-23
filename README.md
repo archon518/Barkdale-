@@ -1,8 +1,9 @@
+# Barkdale & Co.
 
-echo "# Barkdale-" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/archon518/Barkdale-.git
-git push -u origin main
+Static site for Barkdale & Co. (Brookdale, CA). Site files live in `public/`.
+
+## Deploy (Cloudflare Workers static assets)
+
+    npx wrangler deploy
+
+Configuration is in `wrangler.jsonc`. Pretty URLs (`/services`) work through Cloudflare's default HTML handling.
